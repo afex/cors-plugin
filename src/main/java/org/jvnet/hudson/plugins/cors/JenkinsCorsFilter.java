@@ -16,7 +16,7 @@ public class JenkinsCorsFilter implements Filter {
     private static final String CORS_HANDLE_OPTIONS_METHOD = System.getProperty("cors.options", "true");
 
     private static final String CORS_METHODS = System.getProperty("cors.methods", "GET, POST, PUT, DELETE");
-    private static final String CORS_HEADERS = System.getProperty("cors.headers", "Authorization");
+    private static final String CORS_HEADERS = System.getProperty("cors.headers", "Authorization, Content-Type");
 
     /** {@inheritDoc} */
     public void init(FilterConfig filterConfig) throws ServletException {}
